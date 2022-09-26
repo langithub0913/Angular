@@ -1,7 +1,7 @@
 
-<span *ngIf="htmlTemplate && htmlTemplate.eventCBId">
+<div class="grid-item" *ngIf="htmlTemplate && htmlTemplate.eventCBId">
 <button type="button" (click)="notifyUnbind.emit()">Unbind</button>
-</span>
-<span *ngIf="htmlTemplate && !htmlTemplate.eventCBId">
+</div>
+<div class="grid-item" *ngIf="htmlTemplate && !htmlTemplate.eventCBId">
 <button type="button" (click)="notifyBind.emit()">Bind</button>
-</span>
+</div>

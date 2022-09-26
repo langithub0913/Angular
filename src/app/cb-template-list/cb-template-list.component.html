@@ -1,11 +1,18 @@
 <h1>Chatbot Template</h1>
 
-<div *ngFor="let htmlTemplate of htmlTemplates">
-<div style="padding:10px">
-  <span> {{htmlTemplate.htmlCode}}</span>
-  <app-cb-template-unbind-event [htmlTemplate]="htmlTemplate" (notifyBind)="onNotifyBind()" (notifyUnbind)="onNotifyUnbind()">
-  
-
-</app-cb-template-unbind-event>
-</div>
+<div class="grid-container">
+  <span *ngFor="let htmlTemplate of htmlTemplates">
+    <a class="grid-item"
+    
+    [title]="htmlTemplate.name + ' details'"
+      [routerLink]="['/htmltemplates', htmlTemplate.id]"
+    
+    >{{ htmlTemplate.name }}</a>
+    <app-cb-template-unbind-event
+      [htmlTemplate]="htmlTemplate"
+      (notifyBind)="onNotifyBind()"
+      (notifyUnbind)="onNotifyUnbind()"
+    >
+    </app-cb-template-unbind-event>
+  </span>
 </div>

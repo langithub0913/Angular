@@ -14,21 +14,21 @@ export const htmlTemplates = [
     forEach: '<a>Link</a>'
   },
   {
-    id: 1,
+    id: 2,
     name: 'Radio',
     htmlCode: '<div>${foreach}</div>',
     forEach: '<option>Link</option>',
     eventCBId: 10
   },
   {
-    id: 1,
+    id: 3,
     name: 'Button',
     htmlCode: '<button>${label}</button>',
     forEach: ''
   
   },
   {
-    id: 1,
+    id: 4,
     name: 'Button',
     htmlCode: '<button>${label}</button>',
     forEach: ''

@@ -8,13 +8,15 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CbTemplateListComponent } from './cb-template-list/cb-template-list.component';
 import { CbTemplateUnbindEventComponent } from './cb-template-unbind-event/cb-template-unbind-event.component';
+import { CbTemplateDetailsComponent } from './cb-template-details/cb-template-details.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: CbTemplateListComponent },
+      { path: '', component: CbTemplateListComponent },      
+      { path: 'htmltemplates/:htmlTemplateId', component: CbTemplateDetailsComponent }
     ])
   ],
   declarations: [
@@ -22,7 +24,8 @@ import { CbTemplateUnbindEventComponent } from './cb-template-unbind-event/cb-te
     TopBarComponent,
     ProductListComponent,
     CbTemplateListComponent,
-    CbTemplateUnbindEventComponent
+    CbTemplateUnbindEventComponent,
+    CbTemplateDetailsComponent
   ],
   bootstrap: [
     AppComponent
