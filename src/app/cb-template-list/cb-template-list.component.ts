@@ -16,4 +16,11 @@ export class CbTemplateListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onNotifyBind() {
+    window.alert('You will be bound');
+  }
+
+  onNotifyUnbind() {
+    window.alert('You will be unbound');
+  }
 }

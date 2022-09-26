@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HtmlTemplate } from '../cb-templates';
 
 @Component({
@@ -9,10 +9,13 @@ import { HtmlTemplate } from '../cb-templates';
 export class CbTemplateUnbindEventComponent implements OnInit {
 
   @Input() htmlTemplate!: HtmlTemplate;
+  @Output() notifyBind = new EventEmitter();
+  @Output() notifyUnbind = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+ 
 }

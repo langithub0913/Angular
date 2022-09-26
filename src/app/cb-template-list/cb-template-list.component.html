@@ -1,7 +1,11 @@
 <h1>Chatbot Template</h1>
 
 <div *ngFor="let htmlTemplate of htmlTemplates">
-  <p> {{htmlTemplate.htmlCode}}</p>
-  <app-cb-template-unbind-event [htmlTemplate]="htmlTemplate">
+<div style="padding:10px">
+  <span> {{htmlTemplate.htmlCode}}</span>
+  <app-cb-template-unbind-event [htmlTemplate]="htmlTemplate" (notifyBind)="onNotifyBind()" (notifyUnbind)="onNotifyUnbind()">
+  
+
 </app-cb-template-unbind-event>
+</div>
 </div>
