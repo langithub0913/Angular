@@ -6,19 +6,23 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { CbTemplateListComponent } from './cb-template-list/cb-template-list.component';
+import { CbTemplateUnbindEventComponent } from './cb-template-unbind-event/cb-template-unbind-event.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: CbTemplateListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    CbTemplateListComponent,
+    CbTemplateUnbindEventComponent
   ],
   bootstrap: [
     AppComponent
