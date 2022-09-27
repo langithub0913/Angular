@@ -2,7 +2,7 @@ export interface HtmlTemplate {
   id: number;
   name: string;
   htmlCode: string;
-  forEach?: string;
+  forEach: string;
   eventCBId?: number;
 }
 

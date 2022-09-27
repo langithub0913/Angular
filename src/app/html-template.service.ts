@@ -10,6 +10,7 @@ export class HtmlTemplateService {
       id: 8,
       htmlCode: '<div>Template 8</div>',
       name: 'Template 8',
+      forEach: ''
     };
     htmlTemplates.push(htmlTemplateToPush);
   }
