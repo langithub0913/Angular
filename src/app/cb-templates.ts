@@ -2,7 +2,7 @@ export interface HtmlTemplate {
   id: number;
   name: string;
   htmlCode: string;
-  forEach: string;
+  forEach?: string;
   eventCBId?: number;
 }
 
@@ -23,14 +23,13 @@ export const htmlTemplates = [
   {
     id: 3,
     name: 'Button',
-    htmlCode: '<button>${label}</button>',
-    forEach: ''
+    htmlCode: '<button>${label}</button>'
   
   },
   {
     id: 4,
     name: 'Button',
-    htmlCode: '<button>${label}</button>',
-    forEach: ''
+    htmlCode: '<button>${label}</button>'
+    
   }
 ];

@@ -1,1 +1,8 @@
 <p>cb-template-details works!</p>
+
+<div *ngIf="htmlTemplate">
+<h3>{{ htmlTemplate.name }}</h3>
+<h4>{{ htmlTemplate.forEach}}</h4>
+<p>{{ htmlTemplate.htmlCode}}</p>
+<button type="button" (click)="clearHtmlTemplate(htmlTemplate)">Delete</button>
+</div>
